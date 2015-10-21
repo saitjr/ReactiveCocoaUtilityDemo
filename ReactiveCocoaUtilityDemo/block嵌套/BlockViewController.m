@@ -24,9 +24,11 @@
 
 - (void)setupRequestSignal {
     
+    // 假设发起两个请求
+    // request1与request2是自定义方法，会返回两个信号
     RACSignal *signal1 = [self request1];
     RACSignal *signal2 = [self request2];
-    
+
     [[signal1 concat:signal2] subscribeNext:^(id x) {
         
         NSLog(@"%@", x);

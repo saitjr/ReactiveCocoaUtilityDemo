@@ -6,6 +6,14 @@
 //  Copyright © 2015 tangjr. All rights reserved.
 //
 
+/*
+ 
+ 案例二：搜索
+ 
+ 搜索结果并没有显示到界面上，只是进行的原样输出
+ 
+ */
+
 #import "SearchViewController.h"
 #import "ReactiveCocoa.h"
 
