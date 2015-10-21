@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="03N-Fj-38k">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--注册验证-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="用户名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lay-uQ-TxE">
+                                <rect key="frame" x="80" y="100" width="440" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="OOF-QG-19R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oRW-rZ-N1a">
+                                <rect key="frame" x="80" y="160" width="440" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJo-GA-s9L" userLabel="Register Button">
+                                <rect key="frame" x="269.5" y="280" width="61" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="Bq1-BJ-zkg"/>
+                                    <constraint firstAttribute="height" constant="30" id="Keo-8y-ffn"/>
+                                </constraints>
+                                <state key="normal" title="Register"/>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="确认密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4UA-1F-T5O">
+                                <rect key="frame" x="80" y="220" width="440" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oRW-rZ-N1a" firstAttribute="width" secondItem="Lay-uQ-TxE" secondAttribute="width" id="1DA-yM-JQO"/>
+                            <constraint firstItem="cJo-GA-s9L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9dU-HX-zNe"/>
+                            <constraint firstItem="oRW-rZ-N1a" firstAttribute="top" secondItem="Lay-uQ-TxE" secondAttribute="bottom" constant="30" id="9u4-m1-YSb"/>
+                            <constraint firstItem="4UA-1F-T5O" firstAttribute="height" secondItem="oRW-rZ-N1a" secondAttribute="height" id="CMY-Ld-kFr"/>
+                            <constraint firstItem="4UA-1F-T5O" firstAttribute="width" secondItem="oRW-rZ-N1a" secondAttribute="width" id="LK0-yi-x0f"/>
+                            <constraint firstItem="4UA-1F-T5O" firstAttribute="centerX" secondItem="oRW-rZ-N1a" secondAttribute="centerX" id="Q1M-xA-2xC"/>
+                            <constraint firstItem="oRW-rZ-N1a" firstAttribute="centerX" secondItem="Lay-uQ-TxE" secondAttribute="centerX" id="Reo-XI-GDj"/>
+                            <constraint firstItem="4UA-1F-T5O" firstAttribute="top" secondItem="oRW-rZ-N1a" secondAttribute="bottom" constant="30" id="Z5U-OX-00a"/>
+                            <constraint firstItem="Lay-uQ-TxE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="c8z-MK-KZk"/>
+                            <constraint firstItem="Lay-uQ-TxE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="80" id="chF-dl-VY2"/>
+                            <constraint firstItem="cJo-GA-s9L" firstAttribute="top" secondItem="4UA-1F-T5O" secondAttribute="bottom" constant="30" id="ed5-9d-VfK"/>
+                            <constraint firstItem="oRW-rZ-N1a" firstAttribute="height" secondItem="Lay-uQ-TxE" secondAttribute="height" id="sm1-fb-Kc9"/>
+                            <constraint firstItem="Lay-uQ-TxE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tYa-6A-5AF"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="注册验证" id="Iby-BK-h4q"/>
+                    <connections>
+                        <outlet property="comfirmTextField" destination="4UA-1F-T5O" id="jb1-66-9hL"/>
+                        <outlet property="passwordTextField" destination="oRW-rZ-N1a" id="GOm-7q-BGi"/>
+                        <outlet property="registerButton" destination="cJo-GA-s9L" id="HPk-bM-GeD"/>
+                        <outlet property="usernameTextField" destination="Lay-uQ-TxE" id="ink-50-QRr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042" y="-53"/>
+        </scene>
+        <!--搜索-->
+        <scene sceneID="l1U-Nf-i73">
+            <objects>
+                <viewController storyboardIdentifier="SearchViewController" id="NIA-ML-Qez" customClass="SearchViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YGO-cd-nkU"/>
+                        <viewControllerLayoutGuide type="bottom" id="73M-AQ-NT5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VzC-1i-vd5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="qLr-lE-oZg">
+                                <rect key="frame" x="80" y="100" width="440" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="aeT-44-otL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qLr-lE-oZg" firstAttribute="centerX" secondItem="VzC-1i-vd5" secondAttribute="centerX" id="52H-g9-j3x"/>
+                            <constraint firstItem="qLr-lE-oZg" firstAttribute="top" secondItem="YGO-cd-nkU" secondAttribute="bottom" constant="80" id="7wN-J6-XgF"/>
+                            <constraint firstItem="qLr-lE-oZg" firstAttribute="leading" secondItem="VzC-1i-vd5" secondAttribute="leading" constant="80" id="bau-Fm-EL1"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="搜索" id="gZx-7x-FEp"/>
+                    <connections>
+                        <outlet property="searchTextField" destination="qLr-lE-oZg" id="6Xu-7M-P4W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IZ9-pg-s4g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1046" y="601"/>
+        </scene>
+        <!--block嵌套-->
+        <scene sceneID="Jug-3r-sp0">
+            <objects>
+                <viewController storyboardIdentifier="BlockViewController" id="aSP-Ch-dHP" customClass="BlockViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kcE-XC-vq0"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pl6-GE-zlE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fJZ-dU-vWv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="block嵌套" id="six-6g-yHw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PJS-u6-mCc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="559" y="1322"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Wx7-io-Kmg">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="03N-Fj-38k" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W2r-3h-ZFJ">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="8sH-vG-bHI"/>
+                        <segue destination="NIA-ML-Qez" kind="relationship" relationship="viewControllers" id="tg0-hC-pFd"/>
+                        <segue destination="aSP-Ch-dHP" kind="relationship" relationship="viewControllers" id="osM-x3-0nX"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q9f-rH-yM4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="291" y="398"/>
+        </scene>
+    </scenes>
+</document>
